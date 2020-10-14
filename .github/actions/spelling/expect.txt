@@ -1,0 +1,5 @@
+MICROBIT
+micro:bit
+I2C
+SPI
+PWM
