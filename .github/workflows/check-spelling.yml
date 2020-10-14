@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  push:
+    branches: [ master, patch-1 ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check spelling
+        uses: check-spelling/check-spelling@0.0.16-alpha
